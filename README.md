@@ -1,19 +1,19 @@
 # Rathtakrit's Personal website first look
-## Welcome to my first official website! (rathtakrit_0.2)
+## Welcome to my first official website! (rathtakrit_1.0)
 
 
 This is a Personal website of Kritarath Thipsoonthonsak(Kiwi/ Rathtakrit). It's where I will store my project ,my plan and update everything related to me.
 
 Some key information 
-- This is my very first version so. It's going to be sucked
-- I'm learning HTML, CSS, Web Development. And also stuff in Computer
-- There's going to  be more update on this website. And I intent to do it weekly. So, stay tuned!
+- I'm learning HTML, CSS, Web Developmen, and other "fun" stuff in computer
+- There's going to  be more update on this website. Stay tuned!
 
 Updates 
-- Reset design (now it's plain css)
-- cut unnessecary information
-- update styling(header +about me)
+- finish the main page + a click to download cv button
 
 Todo's
-- style with css
-- improve with readt(After learn react)
+- add related links
+- translate EN -> TH
+- add gallery/ blog pages
+- update ATSHM in cv and websites
+- improve the website with react(After learn react)
