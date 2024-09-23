@@ -35,25 +35,12 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-<<<<<<< HEAD
   background: linear-gradient(90deg, rgba(131,62,5,1) 2%, rgba(2,0,36,1) 84%);
-=======
-  background: linear-gradient(90deg, rgba(121,60,9,1) 2%, rgba(2,0,36,1) 84%);
-  color: white;
->>>>>>> 4a189ad7daf8065addd6a04abbebd7c65e0adad1
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
-<<<<<<< HEAD
-
-=======
-#logo {
-  width: 10%;
-}
-.header
->>>>>>> 4a189ad7daf8065addd6a04abbebd7c65e0adad1
 .header {
   margin: 0;
 }
@@ -173,7 +160,6 @@ main {
 .text-summary  h2{
   font-size: 0;
   color: transparent; /* make the text invisible */
-  user-select: none; 
 }
 
 .skill-summary{
