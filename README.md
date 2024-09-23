@@ -12,6 +12,7 @@ Updates
 - finish the main page + a click to download cv button
 
 Todo's
+- make it resposive for phone users
 - add related links
 - translate EN -> TH
 - add gallery/ blog pages
