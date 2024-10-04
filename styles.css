@@ -3,33 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Media Queries for Phone Design */
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #navbar ul {
+    display: none; /* Hide all navbar items */
+  }
+
+  #navbar ul li a {
+    display: none; /* Hide all navbar anchors */
+  }
+
+  /* #navbar a[href*="CV_Kritarath.pdf"] {
+    display: inline-block; 
+    padding: 5px; 
+  } */
+  main {
+    padding: none;
+    margin: none;
+  }
+  #profile-pic {
+    display: none;
+  }
+
+  .about-me,
+  .education,
+  .profile-summary,
+  .experience-container,
+  .roadmap-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: none;
+  }
+
+  .text-summary,
+  .skill-summary,
+  .experience-container,
+  .roadmap-container {
+    width: 100%;
+    padding: none;
+  }
+
+  .roadmap-container div {
+    width: 100%;
+    border: none;
+  }
+}
+
+
 :root {
   --black: #020024;
   --white: #fff;
-  --orange: #833e05;
-  
-}
-
-html{
-  font-family: sans-serif;
-  font-size: 15px;
-}
-:root {
-  --black: rgba(2,0,36,1);
   --orange: #e9a00e;
   --download-button: #0073b1;
 }
+
+.white {
+  color: var(--white);
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
 hr {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
 .underline {
   text-decoration: underline;
 }
+
 .pop {
   font-weight: bold;
   color: var(--orange);
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -41,6 +113,7 @@ hr {
   width: 100%;
   z-index: 1000;
 }
+
 .header {
   margin: 0;
 }
@@ -84,14 +157,12 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 
-body{
-  padding-top: 10px; 
+body {
+  padding-top: 10px;
 }
-main { 
-  padding: 50px;
-}
-.about-me{
-  /* background-color: aquamarine; */
+
+/* Styling for the main content */
+.about-me {
   display: flex;
   padding: 20px;
   padding-bottom: 0px;
@@ -115,24 +186,23 @@ main {
   padding-left: 0;
 }
 
-.studies li{
+.studies li {
   margin-bottom: 10px;
   text-indent: 2%;
 }
 
-
-.studies li li{
+.studies li li {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-indent: 5%;
 }
-.edu-header{
+
+.edu-header {
   font-weight: bold;
   font-style: italic;
   margin-bottom: 5px;
 }
-
 
 #profile-pic {
   width: 10%;
@@ -141,8 +211,7 @@ main {
   border: solid black 0.5px;
 }
 
-.profile-summary{
-  /* background-color: aquamarine; */
+.profile-summary {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -157,33 +226,39 @@ main {
 .text-summary p {
   padding: 10px;
 }
-.text-summary  h2{
+
+.text-summary h2 {
   font-size: 0;
-  color: transparent; /* make the text invisible */
+  color: transparent;
 }
 
-.skill-summary{
-  /* background-color: aliceblue; */
+.skill-summary {
   width: 70%;
   margin-top: 1%;
 }
 
-.skill-summary h1, .experience-container h1{
+.skill-summary h1,
+.experience-container h1 {
   margin-top: 0;
   font-size: 1.4rem;
 }
 
-.skill-summary h2, .experience-container h2, .roadmap-container h2{
+.skill-summary h2,
+.experience-container h2,
+.roadmap-container h2 {
   font-size: 1.1rem;
   padding-bottom: 5px;
 }
-.skill-summary li, .experience-container li, .roadmap-container li {
+
+.skill-summary li,
+.experience-container li,
+.roadmap-container li {
   list-style: none;
   text-indent: 2%;
   margin-bottom: 5px;
 }
 
-#experience{
+#experience {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -194,19 +269,22 @@ main {
 .experience-container {
   width: 70%;
 }
-.experience-container li li{
+
+.experience-container li li {
   text-indent: 5%;
   margin-bottom: 5px;
 }
+
 #roadmap {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.roadmap-header {
+  width: 70%;
 }
-.roadmap-header{
-  width: 70%
-}
+
 .roadmap-header h1 {
   display: flex;
   flex-direction: column;
@@ -220,6 +298,7 @@ main {
   padding: 20px;
   justify-content: center;
 }
+
 .roadmap-container div {
   margin: 0 5px;
   width: 30%;
@@ -227,79 +306,78 @@ main {
 }
 
 .roadmap-container > div:last-child {
-  /* background-color: lightgreen;  */
   border: none;
 }
 
 /* Style the entire section */
 #contact {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 20px; /* Padding around the section */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px; /* Maximum width */
-    margin-top: 20px; /* Space above the section */
-    margin: 0 auto; /* Center the section */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Maximum width */
+  margin-top: 20px; /* Space above the section */
+  margin: 0 auto; /* Center the section */
 }
 
 /* Style the heading */
 #contact h1 {
-    font-size: 2em; /* Larger font size */
-    color: #333; /* Dark text color */
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space below the heading */
+  font-size: 2em; /* Larger font size */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below the heading */
 }
 
 /* Style the contact info container */
 .contact-info {
-    text-align: center; /* Center the text */
+  text-align: center; /* Center the text */
 }
 
 /* Style the paragraphs */
 .contact-info p {
-    font-size: 1em; /* Standard font size */
-    color: #555; /* Medium text color */
-    margin: 10px 0; /* Space above and below paragraphs */
+  font-size: 1em; /* Standard font size */
+  color: #555; /* Medium text color */
+  margin: 10px 0; /* Space above and below paragraphs */
 }
 
 /* Style the links */
 .contact-info a {
-    color: #0073b1; /* LinkedIn blue color */
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; /* Space between links */
-    display: inline-block; /* Inline block for spacing */
-    transition: color 0.3s; /* Smooth color transition */
+  color: #0073b1; /* LinkedIn blue color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between links */
+  display: inline-block; /* Inline block for spacing */
+  transition: color 0.3s; /* Smooth color transition */
 }
 
 /* Change link color on hover */
 .contact-info a:hover {
-    color: #005582; /* Darker blue on hover */
+  color: #005582; /* Darker blue on hover */
 }
 
 /* Style the icons */
 .contact-info i {
-    font-size: 1.5em; /* Larger icon size */
-    margin-right: 5px; /* Space to the right of the icon */
-    vertical-align: middle; /* Align icons with text */
+  font-size: 1.5em; /* Larger icon size */
+  margin-right: 5px; /* Space to the right of the icon */
+  vertical-align: middle; /* Align icons with text */
 }
 
 /* Additional styles for specific icons */
 .contact-info a[href*="linkedin"] i {
-    color: #0073b1; /* LinkedIn blue */
+  color: #0073b1; /* LinkedIn blue */
 }
 
 .contact-info a[href*="github"] i {
-    color: #333; /* GitHub black */
+  color: #333; /* GitHub black */
 }
 
 .contact-info a[href*="instagram"] i {
-    color: #e4405f; /* Instagram pink */
+  color: #e4405f; /* Instagram pink */
 }
 
 .contact-info a[href*="facebook"] i {
-    color: #3b5998; /* Facebook blue */
+  color: #3b5998; /* Facebook blue */
 }
 
 .contact-info a[href*="youtube"] i {
-    color: #ff0000; /* YouTube red */
+  color: #ff0000; /* YouTube red */
 }
